@@ -11,9 +11,5 @@ while (count <= number)
 }
 else 
 {
-   while (count >= number)
-{
-    Console.Write(count+" ");
-    count--;
-}
+    Console.WriteLine("Введено некорректное число");
 }
