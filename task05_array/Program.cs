@@ -8,7 +8,6 @@ void PrintEachSenond (int [] col)
     
     while (index<lenght)
     {
-        // col[index]=new Random().Next(1,10);
         Console.WriteLine(col[index]);
         index=index+2;
     }
