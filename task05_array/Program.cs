@@ -26,6 +26,8 @@ void PrintArray (int [] collection)
     }
 }
 
+
+
 int [] array = new int [5];
 PrintArray(array);
 Console.WriteLine();
