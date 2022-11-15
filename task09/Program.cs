@@ -1,4 +1,4 @@
-﻿// // 9. Напишите программу, которая выводит
+﻿// 9. Напишите программу, которая выводит
 // случайное число из отрезка [10, 99] и показывает
 // наибольшую цифру числа.
 // 78 -> 8
@@ -7,7 +7,18 @@
 
 int number = new Random().Next(10, 100);
 Console.WriteLine($"случайное число из отрезка (10,99): {number}");
-int firstDigit = number / 10;
-int secondDigit = number % 10;
-if (firstDigit>secondDigit) Console.WriteLine($"наибольшая цифра числа: {firstDigit}");
-else Console.WriteLine($"наибольшая цифра числа: {secondDigit}");
+// int firstDigit = number / 10;
+// int secondDigit = number % 10;
+// if (firstDigit > secondDigit) Console.WriteLine($"наибольшая цифра числа: {firstDigit}");
+// else Console.WriteLine($"наибольшая цифра числа: {secondDigit}");
+
+int MaxDigit(int num)
+{
+    int firstDigit = num / 10;
+    int secondDigit = num % 10;
+    if (firstDigit > secondDigit) return firstDigit;
+    return secondDigit;
+}
+
+int result = MaxDigit(number);
+Console.WriteLine($"наибольшая цифра числа: {result}");
