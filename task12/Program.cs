@@ -11,7 +11,13 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 
 bool Multyplicity (int num1, int num2)
 {
-    if (num1%num2==0) return true;
-    return false;
+    return num1%num2==0;
 }
 Console.WriteLine ($"{Multyplicity(number1, number2)}, остаток = {number1%number2}");
+
+// int MultyplicitySecond (int num1, int num2)
+// {
+//     return num1%num2;
+// }
+// int result2 = MultyplicitySecond (number1, number2);
+// Console.WriteLine ($"Остаток от деления: {result2}");
