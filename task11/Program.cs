@@ -9,8 +9,8 @@ Console.WriteLine($"случайное число из отрезка (100,999):
 int DeleteSecondDigit(int num)
 {
     int firstDigit = num / 100;
-    int thirstDigit = num % 10;
-    return firstDigit *10+thirstDigit;
+    int thirdtDigit = num % 10;
+    return firstDigit *10+thirdDigit;
 }
 
 int result = DeleteSecondDigit(number);
