@@ -18,8 +18,8 @@ int Quarter(int xc, int yc)
 }
 
 int quarter = Quarter(x, y);
-string result = quarter > 0 
+string result = quarter > 0
         ? $"Указанные коордтнаты соответствуют четверти ----> {quarter}"
         : "Введены некорректные данные";
-        
+
 Console.WriteLine(result);
