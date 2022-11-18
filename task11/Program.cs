@@ -10,7 +10,7 @@ int DeleteSecondDigit(int num)
 {
     int firstDigit = num / 100;
     int thirdtDigit = num % 10;
-    return firstDigit *10+thirdDigit;
+    return firstDigit *10+thirdtDigit;
 }
 
 int result = DeleteSecondDigit(number);
