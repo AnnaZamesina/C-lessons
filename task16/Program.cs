@@ -17,3 +17,4 @@ bool Multyplicity(int num1, int num2)
 }
 Console.WriteLine(Multyplicity(number1, number2)? "Да" : "Нет");
 
+
