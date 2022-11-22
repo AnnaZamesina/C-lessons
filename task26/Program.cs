@@ -10,13 +10,13 @@ int number = Convert.ToInt32(Console.ReadLine());
 int DigitAmount(int num)
 {
     int count = 0;
-    if (num<0) num = - num;
-    while (num>0)
+    if (num < 0) num = -num;
+    while (num > 0)
     {
         num = num / 10;
         count++;
     }
-    return count;
+    return count == 0 ? 1 : count;
 }
 
 int result = DigitAmount(number);
