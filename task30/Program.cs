@@ -7,15 +7,37 @@
 // int [] array = new int [8];
 // array [i] = new Random().Next (1,10);
 
+// int[] array = new int[8];
+
+// void Random(int[] col)
+// {
+//     for (int i = 0; i < col.Length; i++)
+//     {
+//         col[i] = new Random().Next(0, 2);
+//         Console.Write($"{col[i]} ");
+//     }
+// }
 int[] array = new int[8];
 
-void Random(int[] col)
+void RandomArray(int[] array)
 {
-    for (int i = 0; i < col.Length; i++)
+    Random rnd = new Random();
+    for (int i = 0; i < array.Length; i++)
     {
-        col[i] = new Random().Next(0, 2);
-        Console.Write($"{col[i]} ");
+        array[i] = rnd.Next(0, 2);
     }
 }
 
-Random(array);
+void PrintArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+}
+
+RandomArray(array);
+
+// Console.WriteLine(string.Join(" ", array));
+PrintArray(array);
+
