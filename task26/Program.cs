@@ -21,3 +21,5 @@ int DigitAmount(int num)
 
 int result = DigitAmount(number);
 Console.WriteLine($"Количество цифр в числе: {result}");
+
+// Console.Writeline(Math.Abs(-123));
